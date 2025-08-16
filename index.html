@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>귀여운 동물 타자 연습</title>
+    <!-- Google AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6412479119627050"
+     crossorigin="anonymous"></script>
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts for cute font -->
@@ -277,7 +280,7 @@
         };
         const wordToEmoji = {
             '개': '🐶', '곰': '🐻', '소': '🐮', '말': '🐴', '양': '🐑', '쥐': '🐭', '닭': '🐔', '용': '🐲', '뱀': '🐍', '토끼': '🐰',
-            '고양이': '🐱', '강아지': '🐶', '병아리': '🐣', '송아지': '🐮', '사자': '🦁', '호랑이': '�', '코끼리': '🐘', '기린': '🦒',
+            '고양이': '🐱', '강아지': '🐶', '병아리': '🐣', '송아지': '🐮', '사자': '🦁', '호랑이': '🐯', '코끼리': '🐘', '기린': '🦒',
             '하마': '🦛', '악어': '🐊', '원숭이': '🐵', '다람쥐': '🐿️', '펭귄': '🐧', '얼룩말': '🦓', '꾀꼬리': '🐦', '풀벌레': '🐛',
             '딱따구리': '🐦', '개구리': '🐸', '아저씨': '👨'
         };
@@ -347,8 +350,6 @@
             }
             const targetText = currentLevelWords[currentWordIndex] || '';
             const typedText = wordInput.value;
-
-            // This block, which used to prevent incorrect input, has been removed.
             
             if (tickSound) tickSound.triggerAttackRelease('C5', '16n');
             warningMessage.textContent = '';
